@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h3{
+    font-size: 15px;
+    cursor: auto;
+}
+a{
+    text-decoration: none; /*bỏ gạch chân*/
+    color: #696969;
+}
+a:hover{
+    color: #adad90;
+}
+div.container{
+    width: 1200px;
+    margin: auto;
+}
+
+/*MENU*/
+div.menu{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center; /*vào giữa*/
+}
+div.menu>ul>li{
+    display: inline-block; /*trên 1 dòng*/
+    padding: 10px 20px;
+    text-transform: uppercase; /*Viết hoa tất cả chữ*/
+}
+div.menu>ul>a>img{
+    margin: 0px 15px -35px;
+}
+div.menu>ul>a>img:hover{
+    opacity: 0; /*di chuột mất logo*/
+}
+div.search>input{
+    width: 500;
+    height: 30px;
+    margin-left: -510px;
+}
+div.search>button{
+    border: none;
+}
+div.search>button>img{
+    width: 20px;
+    height: auto;
+    vertical-align: middle; /*nút search nằm giữa thanh search*/
+    cursor: pointer;
+}
+/*ITEM*/
+div.content1{
+    display: flex; /*nằm ngang*/
+    width: 1200px;
+    margin: 0px 0px;
+}
+div.content2{
+    display: flex;
+    width: 1200px;
+    margin: 0px 0px;
+}
+div.item{
+    width: 25%;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 10px; /*bo góc tròn*/
+    padding: 5px;
+    margin: 1%;
+}
+div.item>a>img{
+    width: 100%;
+    cursor: pointer;
+}
+div.item>img{
+    width: 100%;
+    cursor: pointer;
+}
+div.text{
+    background: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+h2.subject{
+    font-size: 50px;
+    background-color: gray;
+    padding: 10px 10px 14px 10px;
+    border-radius: 20px 20px 0 0;
+    width: 25%;
+    height: 40px;
+    margin-left: 13px;
+}
+div.line{
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+    margin-left: 13px;
+}
+div.slide{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden; /*ẩn hình ảnh vượt quá 1000px*/ 
+    margin-top: 50px;
+    position: relative;
+}
+div.slide>div.dieuhuong{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    top: 50%;
+    padding-left: 20px;
+    display: none; /*mất 2 nút điều hướng*/
+    cursor: pointer;
+}
+div.slide>div.dieuhuong i:last-child{ /*lấy thẻ i cuối cùng*/
+    position: relative;
+    left: 880px;
+}
+div.slide>div.chuyen-slide{
+    width: 9999px;
+    transition: all 0.5s; /*chuyển động ảnh mượt trong 0.5s*/
+}
+div.slide>div.chuyen-slide>img{
+    width: 1000px;
+    height: 600px;
+    float: left; /*chuyển hình ảnh qua bên trái*/
+}
+div.slide:hover>div.dieuhuong{ /*di chuột lên ảnh hiện 2 nút điều hướng*/
+    display: block;
+}
+
+
+/*ITEM ALL*/
+div.demo{
+    width: 600px;
+    height: 900px;
+    overflow: scroll; /*tạo thanh trượt*/
+    overflow-x: hidden; /*ẩn thanh trượt ngang*/
+    float: left;
+}
+div.demo>ul>li>img{
+    width: 600px;
+    height: 900px;
+    cursor: pointer;
+}
+div.text{
+    cursor: context-menu;
+}
+div.text>h1{
+    float: flex;
+    text-align: center;
+    padding: 20px;
+    
+}
+div.text>h2{
+    padding: 10px;
+    font-size: 30px;
+    cursor: auto;
+}
+div.text>select.box{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+div.text>input{
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+div.text>p{
+    font-size: 30px;
+}
+
+/****************************************************************************/
+
+.flex{
+    display: flex;
+}
+section.content{
+    display: flex;
+}
+section.content>div{
+    width: 40%;
+}
+.thumbnail img {
+    height: 150px;
+    margin: 10px 0;
+    margin-top: 0px;
+    display: block;
+    cursor: pointer;
+    opacity: 0.6; /*làm mờ hàng ảnh nhỏ ở dưới*/
+    transition: 0.4s; /*độ trễ chuyển ảnh dưới*/
+}
+.thumbnail{
+    float: left;
+}
+.thumbnail img:hover{
+    opacity: 1; /*trỏ chuột vô hàng ảnh dưới làm hết mờ*/
+}
+.thumbnail>div{
+    width: 20%;
+    height: 50%;
+}
+img.big{
+    height: 560px;
+    width: 500px;
+    margin-top: 60px;
+}
+
+div.right{
+    margin-top: 130px;
+    width: 100%;
+    margin-left: 180px;
+}
+div.right>h1{
+    cursor: auto;
+    font-size: 40px;
+}
+div.right>h2{
+    font-size: 33px;
+}
+div.right>p{
+    font-size: 15px;
+}
+.right img{
+    height: 480px;
+}
+
+/*FOOTER*/
+.footer{
+    margin-top: 80px;
+    float: right;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid-row{
+    display: flex;
+    margin-left: 120px;
+}
+.grid-column{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33%;
+    margin-right: 45px;
+}
+h3.footer-heading{
+    font-size: 40px;
+    cursor: auto;
+}
+img.top{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 100px;
+}
+h4.text{
+    font-size: 20px;
+    cursor: auto;
+}
+li.footer-item{
+    list-style: none; /*bỏ dấu chấm của thẻ li*/
+    font-size: 16px;
+    margin-top: 45px;
+}
+ul.footer-link1{
+    display: flex;
+    padding: 5px;
+    list-style: none;
+    margin-top: 38px;
+    margin-left: 40px;
+}
+ul.footer-link2{
+    display: flex;
+    padding: 5px;
+    list-style: none;
+    margin-left: 40px;
+}
+a.fb{
+    margin-left: 10px;
+    color: rgb(0, 106, 141);
+    font-size: 36px;
+}
+a.ig{
+    margin-left: 10px;
+}
+h4{
+    margin-left: 20px;
+    cursor: auto;
+}
+
+/*SELECT SIZE*/
+
+form{
+    margin-top: 40px;
+}
+h5{
+    cursor: auto;
+    margin-left: 70px;
+}
+input.select{
+    cursor: pointer;
+}
